@@ -1,60 +1,66 @@
-# Perform-multiple-linear-regression
-In this project, we analysed a small business's historical marketing promotion data. Each row corresponded to an independent marketing promotion where the business used TV, social media, radio, and influencer promotions to increase sales.  To expand this analysis to include other variables that could help them target their marketing efforts.
+# 📈 Marketing Campaign Sales Prediction – Multiple Linear Regression
 
+This project uses multiple linear regression to analyze how different promotional strategies (TV, Radio, Social Media, Influencers) affect product sales. The model helps the business identify the most effective marketing channels for maximizing return on investment.
 
+---
 
-**When TV and Radio are used to predict Sales, the model coefficients are:**
+## 🛠 Tools & Libraries
 
-- 𝛽0=218.5261
- 
-- 𝛽𝑇𝑉𝐿𝑜𝑤=−154.2971
- 
-- 𝛽𝑇𝑉𝑀𝑒𝑑𝑖𝑢𝑚=−75.3120
- 
-- 𝛽𝑅𝑎𝑑𝑖𝑜=2.9669
- 
+- Python
+- pandas, numpy
+- scikit-learn
+- statsmodels
+- seaborn, matplotlib
 
-Question: What is your intepretation of the coefficient estimates? Are the coefficients statistically significant?
+---
 
-The default TV category for the model is High since there are coefficients for the other two TV categories, Medium and Low. Because the coefficients for the Medium and Low TV categories are negative, that means the average of sales is lower for Medium or Low TV categories compared to the High TV category when Radio is at the same level.
+## 📁 Files
 
-For example, the model predicts that a Low TV promotion is 154.2971 lower on average compared to a high TV promotion given the same Radio promotion.
+```
+📄 Perform multiple linear regression.py  – Main analysis script  
+📄 marketing_sales_data.csv              – Marketing campaign dataset  
+```
 
-The coefficient for Radio is positive, confirming the positive linear relationship shown earlier during the exploratory data analysis.
+---
 
-The p-value for all coefficients is 0.000
-, meaning all coefficients are statistically significant at 𝑝=0.05
-. The 95% confidence intervals for each coefficient should be reported when presenting results to stakeholders.
+## 📊 Key Features
 
-For example, there is a 95%
- chance that the interval [−163.979,−144.616]
- contains the true parameter of the slope of 𝛽𝑇𝑉𝐿𝑜𝑤
+- Categorical encoding of TV promotion levels (High, Medium, Low)
+- Model training and statistical inference using statsmodels
+- Interpretation of coefficients with 95% confidence intervals
+- Recommendation strategy for future campaign budgeting
 
+---
 
- ### Findings
+## 📈 Results & Findings
 
-According to the model, high TV promotional budgets result in significantly more sales than medium and low TV promotional budgets. For example, the model predicts that a Low TV promotion is 154.2971 lower on average than a high TV promotion given the same Radio promotion.
+- High TV promotional budgets lead to significantly greater sales.
+- Low TV promotions reduce predicted sales by ~$154M compared to High TV promotions.
+- Radio promotions have a positive linear relationship with sales.
+- All coefficients are statistically significant (p < 0.05) and backed by confidence intervals.
 
-The coefficient for radio is positive, confirming the positive linear relationship shown earlier during the exploratory data analysis.
+---
 
-- The p-value for all coefficients is 0.000
- meaning all coefficients are statistically significant at 𝑝=0.05
-. The 95% confidence intervals for each coefficient should be reported when presenting results to stakeholders.
+## 📌 Example Interpretation
 
-For example, there is a 95%
- chance the interval [−163.979,−144.616]
- contains the true parameter of the slope of 𝛽𝑇𝑉𝐿𝑜𝑤
-, which is the estimated difference in promotion sales when a low TV promotional budget is chosen instead of a high TV promotion budget.
+> The model estimates that shifting from a high to a low TV budget reduces sales by \$154M (95% CI: [−163.979, −144.616]).  
+> A \$1M increase in the radio budget results in approximately \$2.97M more sales (95% CI: [2.551, 3.383]).
 
- ### Findings to stakeholders
+---
 
-- High TV promotional budgets have a substantial positive influence on sales. The model estimates that switching from a high to medium TV promotional budget reduces sales by $75.3120
- million (95% CI [−82.431,−68.193])
-- and switching from a high to low TV promotional budget reduces sales by $154.297
- million (95% CI [−163.979,−144.616])
- - The model also estimates that an increase of $1
- million in the radio promotional budget will yield a $2.9669
- million increase in sales (95% CI [2.551,3.383]
-).
+## 🧪 How to Run
 
-Thus, it is recommended that the business allot a high promotional budget to TV when possible and invest in radio promotions to increase sales.
+1. Clone this repository
+2. Ensure dataset is in the same directory or update the file path in the script
+3. Run the Python script:
+
+```bash
+pip install -r requirements.txt
+python "Perform multiple linear regression.py"
+```
+
+---
+
+## 👤 Author
+
+Rafsun Chowdhury
