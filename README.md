@@ -1,4 +1,4 @@
-# 📊 Campaign Marketing Performance Analysis
+#  Campaign Marketing Performance Analysis
 **What Makes a Campaign Click?**
 
 This project explores a real-world marketing dataset to uncover the drivers of campaign success using data analysis and visual storytelling. It helps answer questions like:
@@ -9,16 +9,12 @@ This project explores a real-world marketing dataset to uncover the drivers of c
 
 ---
 
-## 📦 Dataset
+##  Dataset
 - 📁 [Download ZIP file](https://github.com/Rafsun-Chowdhury/Perform-multiple-linear-regression/blob/main/marketing_campaign_dataset.csv.zip)
 - Contains campaign-level data: channel, audience, campaign type, cost, impressions, clicks, conversions, engagement, and more.
 
 ---
 
-## ▶️ Run on Google Colab
-Click below to open and run the notebook in your browser:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Rafsun-Chowdhury/Perform-multiple-linear-regression/blob/main/marketing_campaign_analysis.ipynb)
 
 ---
 
